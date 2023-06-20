@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Fibonacci series</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var fib = 0,fib2 = 1,fib1 = 0;
+            var num = prompt("Enter a number:","");
+            if(num!=null && num>0)
+            {
+                document.write("<h1>The fibonacci numbers are<h1/><br/>");
+                    if(num==1)
+                        document.write("<h1>"+fib1+"<h1/>");
+                    else
+                        document.write("<h1>"+fib1+"<h1/>");
+                        document.write("<h1>"+fib2+"<h1/>");
+                    for(i=3;i<=num;i++)
+                    {
+                        fib=fib1+fib2;
+                        document.write("<h1>"+fib+"<h1/>");
+                        fib1=fib2;
+                        fib2=fib;
+                    }
+            }
+            else
+                alert("no proper input");
+    </script>
+    </body>
+</html>

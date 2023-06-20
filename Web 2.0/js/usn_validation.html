@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>
+        USN Validation
+    </title>
+    <script type="text/javascript">
+        function validateusn()
+            {
+                var usn = document.getElementById("usn");
+                var usnExp=/[2][0][2][1][1][A-Za-z][A-Za-z][A-Za-z][0-9][0-9][0-9][0-9]$/;
+                if(usn.value.length == 0)
+                    {
+                        alert("USN feild is empty");
+                        usn.focus();
+                        return false;
+                    }
+                else if(!usn.value.match(usnExp))
+                    {
+                        alert("USN is not correct");
+                        usn.focus();
+                        return false;
+                    }
+                alert("US Number "+usn.value+" is correct");
+                return true;
+
+                var sem = document.getElementById("sem");
+                var semExp=[1-6];
+                if(sem.value.length == 0)
+                    {
+                        alert("Semester feild is empty");
+                        sem.focus();
+                        return false;
+                    }
+                else if(!sem.value.match(semExp))
+                    {
+                        alert("Semester enetered is not correct");
+                        sem.focus();
+                        return false;
+                    }
+                alert("Semester "+sem.value+" is correct");
+                return true;
+            }
+    </script>
+</head>
+<body>
+<form>
+Enter USN: <input type="text" id="usn"/> <br /><br />
+Enter Semester: <input type="text" id="sem"/> <br /><br />
+<input type="submit" value="OK" onClick="validateusn()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[category="web"]{text-decoration: line-through; color: black;}
+[category="children"]{text-decoration: line-through; color: white;}
+book{font-family:'sans serif';color:orange;font-size:15pt;}
+title{font-family:'arial';color:black;font-size:15pt;}
+author{font-family:'Times New Roman';color:lime;font-size:15pt;}
+year{font-family:'Century Gothic';color:blue;font-size:15pt;}
+price{font-family:'Georgia';color:green;font-size:15pt;}

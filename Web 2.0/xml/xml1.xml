@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<?xml-stylesheet type = "text/css" href = "xml1_css.css " ?>
+<vtu>
+<student-info>
+<usn>20211BCA0004</usn>
+<name>Ayman</name>
+<college>
+
+
+
+
+Presidency Uni
+
+
+n
+</college>
+<branch>BCA</branch>
+<year>2021</year>
+<email>bca0004@gmail.com</email>
+</student-info>
+<br/>
+<student-info>
+<usn>20211BCA0001</usn>
+<name>John</name>
+<college>Presidency Uni</college>
+<branch>BCA</branch>
+<year>2021</year>
+<email>bca0001@gmail.com</email>
+</student-info>
+<br/>
+<student-info>
+<usn>20211BCA0002</usn>
+<name>Bob</name>
+<college>Presidency Uni</college>
+<branch>BCA</branch>
+<year>2021</year>
+<email>bca0002@gmail.com</email>
+</student-info>
+</vtu>
