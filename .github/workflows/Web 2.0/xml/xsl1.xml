@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<?xml-stylesheet type = "text/xsl" href = "xsl_1.xsl" ?>
+<pu>
+<student-info>
+<usn>20211BCA0004</usn>
+<name>Ayman Abbas</name>
+<college>Presidency Uni</college>
+<branch>BCA</branch>
+<year>2021</year>
+<email>ayms@gmail.com</email>
+</student-info>
+</pu>

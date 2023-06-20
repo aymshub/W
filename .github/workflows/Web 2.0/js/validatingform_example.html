@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+                var x=document.forms["form1"]["name"].value;
+                if(x==""){
+                    alert("PLease fill name")
+                    return false;
+                }
+
+                var y=document.forms["form1"]["age"].value;
+                if(y==""){
+                    alert("PLease fill age")
+                    return false;
+                }
+
+                var z=document.forms["form1"]["gender"].value;
+                if(z==""){
+                    alert("PLease fill gender")
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="form1" onsubmit="return validate()" method="post">
+            Name:<input type="text" name="name" pattern= "[a-z].[^0-9]" minlength="6" title="Must Be 5 or more characters and it should only contain alphabets" placeholder="Enter your name..."><br> </br>
+            Age:<input type="number" name="age" title="Must only contain numbers" maxlength="3" placeholder="Enter your age..."><br> </br>
+            Gender:<input type="radio" name="gender" value="Male">Male
+                   <input type="radio" name="gender" value="Female">Female<br/><br/>
+            <input type="submit" value="OK">
+        </form>
+    </body>
+</html>

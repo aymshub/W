@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#p1").css("color","red").slideDown().slideUp();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <p id="p1">Click on the button to see chaining in real time!</p>
+        <button>Click me!</button>
+    </body>
+</html>

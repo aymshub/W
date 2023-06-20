@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h2>The XMLHttpRequest Object</h2>
+        <h4>Start typing a name in the inout field below:</h4>
+
+        <p>Suggestions: <span id="txthint">
+        </span></p>
+
+        <p>First Name: <input type="text" id="fname" onkeyup="showHint(this.value)"></p>
+
+        <script>
+            function showHint(str) {
+                if (str.length == 0){
+                    document.getElementById("txthint").innerHTML="";
+                    return;
+                }
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("txthint").innerHTML = this.responseText;
+                }
+                xhttp.open("GET","gethint.php?q="+str);
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>

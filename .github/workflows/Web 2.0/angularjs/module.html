@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> <!--binds the angular js and the html-->
+    First Name: <input type="text" ng-model="firstName"><br>
+    First Name: <input type="text" ng-model="lastName"><br>
+{{ firstName + " " + lastName }}
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) { 
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+}); 
+</script> <!--to initialise the scope of the application data
+            it binds the html(view) and the javascript(controller)-->
+
+</body>
+</html>
+
+<!--
+    Model View Controller
+    s/w design pattern to develop web apps
+
+    model - lowest level to maintain data
+    view - displays all or a portion of the data to the user
+    controller - s/w code that controls interactions between the model and the view
+-->
