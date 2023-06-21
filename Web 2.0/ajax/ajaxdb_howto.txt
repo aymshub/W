@@ -1,0 +1,5 @@
+ajax,php, and mysql
+
+https://www.w3schools.com/php/php_ajax_database.asp
+
+https://codingstatus.com/how-to-insert-data-using-ajax-in-php/
